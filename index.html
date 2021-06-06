@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SceneGate   | SceneGate - Reverse engineering, modding and localization </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="SceneGate   | SceneGate - Reverse engineering, modding and localization ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="images/logo_48.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="index.html" title="Home">Home</a>
+                      </li>
+                      <li>
+                          <a href="guides/Contributing.html" title="Guides">Guides</a>
+                      </li>
+                      <li>
+                          <a href="dev/Changelog.html" title="Changelog">Changelog</a>
+                      </li>
+                      <li>
+                          <a href="https://github.com/scenegate/scenegate" title="GitHub">GitHub</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="README">
+<h1 id="scenegate-mit-license-build">SceneGate <a href="https://choosealicense.com/licenses/mit/"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="MIT License"></a> <img src="https://github.com/SceneGate/scenegate/workflows/Build%20and%20release/badge.svg" alt="build"></h1>
+
+<p><strong>Work-in-progress</strong> tool for reverse engineering, file format analysis, modding and localization.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Navigate the virtual file system from Yarhl.</li>
+<li>Convert files with Yarhl converters via plugins.</li>
+</ul>
+<h3 id="yarhly-shipped-plugins"><em>Yarhly</em> shipped plugins</h3>
+<ul>
+<li><a href="https://github.com/SceneGate/Lemon">Lemon</a>: 3DS formats</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>The project ships the application as a portable ZIP file that does not require any installation. Just unzip and run!</p>
+<!-- prettier-ignore -->
+<table>
+<thead>
+<tr>
+<th>Release</th>
+<th>Package</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stable</td>
+<td><a href="https://github.com/SceneGate/SceneGate/releases"><img src="https://img.shields.io/github/v/release/SceneGate/scenegate?sort=semver" alt="GitHub release (latest SemVer)"></a></td>
+</tr>
+<tr>
+<td>Preview</td>
+<td><a href="https://github.com/SceneGate/SceneGate/actions"><img src="https://img.shields.io/github/commits-since/SceneGate/scenegate/latest?sort=semver" alt="GitHub commits since latest release (by SemVer)"></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="documentation">Documentation</h2>
+<p>Feel free to ask any question in the
+<a href="https://github.com/SceneGate/scenegate/discussions">project Discussion site!</a></p>
+<p>Check our on-line <a href="https://scenegate.github.io/SceneGate/">documentation</a> for more
+information about the file formats and how to use the tools.</p>
+<h2 id="build">Build</h2>
+<p>The project requires to build .NET 5.0 SDK and .NET Core 3.1 runtime. If you
+open the project with VS Code and you did install the
+<a href="https://code.visualstudio.com/docs/remote/containers">VS Code Remote Containers</a>
+extension, you can have an already pre-configured development environment with
+Docker or Podman.</p>
+<p>To build, test and generate artifacts run:</p>
+<pre><code class="lang-sh"># Only required the first time
+dotnet tool restore
+
+# Default target is Stage-Artifacts
+dotnet cake
+</code></pre>
+<p>To just build and test quickly, run:</p>
+<pre><code class="lang-sh">dotnet cake --target=BuildTest
+</code></pre>
+<h2 id="license">License</h2>
+<p>The software is licensed under the terms of the
+<a href="https://choosealicense.com/licenses/mit/">MIT license</a>. The information and
+software provided by this repository is only for educational and research
+purpose. Please support the original game developers by buying their games.</p>
+<p>Icons:</p>
+<ul>
+<li><a href="http://www.famfamfam.com/">Famfamfam icons</a></li>
+<li><a href="https://www.popicon.com/pages/free">Popicon Juice free pack</a></li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/scenegate/scenegate/blob/main/docs/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 2021 SceneGate
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>
