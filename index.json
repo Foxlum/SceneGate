@@ -7,7 +7,7 @@
   "dev/Changelog.html": {
     "href": "dev/Changelog.html",
     "title": "vNext (June 06, 2021) | SceneGate - Reverse engineering, modding and localization",
-    "keywords": "vNext (June 06, 2021) As part of this release we had 3 issues closed. Enhancements #3 Refactor UI for MVVM, add file icons and converter filtering #2 Create cross-platform UI projects and base UI #1 Setup devops pipeline"
+    "keywords": "vNext (June 06, 2021) As part of this release we had 4 issues closed. Enhancements #3 Refactor UI for MVVM, add file icons and converter filtering #2 Create cross-platform UI projects and base UI #1 Setup devops pipeline"
   },
   "guides/Contributing.html": {
     "href": "guides/Contributing.html",
